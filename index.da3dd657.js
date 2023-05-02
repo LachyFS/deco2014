@@ -1,2 +1,0 @@
-let box=document.querySelector("#box"),title=document.querySelector(".task"),details=document.querySelector("#details");details.style.display="none";let defaultSize=box.style.height,state=!1;if(title.addEventListener("click",(()=>{state=!state,details.style.display=state?"inline":"none"})),window.location.href.includes("completed")){box.style.background="rgb(186, 255, 171)",title.textContent+=" ✓",document.querySelector(".button").style.display="none"}
-//# sourceMappingURL=index.da3dd657.js.map
