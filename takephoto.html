@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Scavenger Hunt</title>
+    <link rel="stylesheet" href="index.597d999f.css">
+</head>
+
+<body>
+    <p id="lookingFor"><strong>Find:</strong> The Wilkinson Building</p>
+    <video autoplay="true" id="videoElement">
+    </video>
+
+    <script>var video = document.querySelector("#videoElement");
+if (navigator.mediaDevices.getUserMedia) navigator.mediaDevices.getUserMedia({
+    video: true
+}).then(function(stream) {
+    video.srcObject = stream;
+}).catch(function(err0r) {
+    console.log("Something went wrong!");
+});
+
+</script>
+
+    <footer>
+        <a id="photoButton" href="index.html#completed">Take Photo</a>
+        <a class="button" href="index.html">Go Back</a>
+    </footer>
+
+</body>
+
+
+</html>
